@@ -1,0 +1,27 @@
+{
+  "name": "suibianxiexie_mp-baidu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "dev": "gulp dev",
+    "build": "gulp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhouhuafei/suibianxiexie_mp-baidu.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhouhuafei/suibianxiexie_mp-baidu/issues"
+  },
+  "homepage": "https://github.com/zhouhuafei/suibianxiexie_mp-baidu#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2"
+  }
+}

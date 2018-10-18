@@ -1,0 +1,14 @@
+{
+  "extEnable": true,
+  "extAppid": "wxd10aec12c954efcd",
+  "ext": {
+    "siteInfo": {
+      "domainPath": "https://api-mstore.weishangye.com/",
+      "apiToken": "8pdqc1lugsv0az2ipf4s57ssa7yghiwz",
+      "site_id": "438520",
+      "api_version": "1.0",
+      "api_type": "wechat",
+      "h5Domain": "https://wx-whd.weishangye.com/"
+    }
+  }
+}
