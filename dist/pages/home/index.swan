@@ -1,5 +1,5 @@
 <view class="container">
-    <!-- navigate时，首页和详情页不能一直点击互相跳转下去，redirect可以 -->
+    <!-- navigate时，首页和详情页不能一直点击互相跳转下去，首页跳详情，详情跳首页，首页再跳详情页就无效了。redirect可以 -->
     <navigator class="g-route" url="/pages/detail/index" open-type="navigate">
         <view class="g-route-text">去详情页</view>
         <view class="g-route-icon iconfont icon-right"></view>
