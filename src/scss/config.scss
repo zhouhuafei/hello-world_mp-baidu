@@ -1,0 +1,64 @@
+// 设计稿是375的，后续请务必按照375的设计图出图。
+@function rpx2($px) {
+    @return $px * 0.01rem;
+}
+
+// 设计稿是375的，后续请务必按照375的设计图出图。
+@function px2rem($px) {
+    @return $px * 0.01rem;
+}
+
+// 设计稿是750的，需要/2，后续请务必按照375的设计图出图。
+@function px2rpx($px) {
+    @return $px / 2 * 0.01rem;
+}
+
+// 省略号
+@mixin ellipsis2($lineClamp: 1, $lineHeight: 18) {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: $lineClamp;
+    -webkit-box-orient: vertical;
+}
+
+@mixin clear-fix() {
+    &:after {
+        content: '';
+        display: block;
+        height: 0;
+        overflow: hidden;
+        font-size: 0;
+        clear: both;
+    }
+}
+
+// 新版
+$color1: #fc152e;
+$color2: #333333;
+$color3: #dddddd;
+$color4: #7f8285;
+$color5: #666666;
+$color6: #aaaaaa;
+$color7: #888888;
+$color8: #ff6537;
+$color9: whitesmoke;
+$color10: #fd9c1e;
+$color11: #006de7;
+$color12: #efeff4;
+$color13: #ff6537;
+$color14: white;
+$color15: #65af2b;
+$color16: #b7b7b7;
+
+$g-border-color-default: #dddddd;
+
+$g-font-color-default: #333333;
+$g-font-color-auxiliary: #aeaeae;
+
+$g-background-color-floor: #f2f2f2;
+
+$g-success-color: #68cf11;
+$g-danger-color: #f8001d;
+
+

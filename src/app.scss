@@ -1,2 +1,23 @@
+@import "../src/scss/config";
+// 字体图标
+@import "../src/fonts/iconfont.css";
+// 清零样式
 @import "../src/scss/reset";
+// rem自适应以及0.5px的边框
 @import "../src/scss/media";
+
+.container {
+    font-size: px2rem(12);
+}
+
+.g-route {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: px2rem(20);
+    font-size: px2rem(20);
+}
+
+.g-route-icon {
+    margin-left: px2rem(10);
+}

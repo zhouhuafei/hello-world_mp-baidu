@@ -4,6 +4,6 @@ Page({
         this.data.options = options;
     },
     onShow() {
-        console.log('home onShow this.data.options', this.data.options);
+        console.log('detail onShow this.data.options', this.data.options);
     },
 });
