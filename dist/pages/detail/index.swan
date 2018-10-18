@@ -1,0 +1,6 @@
+<view class="container">
+    <navigator class="g-route" url="/pages/home/index" open-type="navigate">
+        <view class="g-route-text">去首页</view>
+        <view class="g-route-icon iconfont icon-right"></view>
+    </navigator>
+</view>

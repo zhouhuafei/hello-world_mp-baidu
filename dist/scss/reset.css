@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html, body {
+  background-color: #f5f5f5;
+  font-size: 12px;
+  font-family: -apple-system-font, Helvetica Neue, Helvetica, sans-serif;
+  height: 100%;
+  line-height: 1; }
+
+.iconfont {
+  font-size: inherit;
+  line-height: 1; }
