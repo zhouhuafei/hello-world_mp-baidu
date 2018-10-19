@@ -1,13 +1,13 @@
 @import "./config";
 
-// rem自适应
-@for $i from 750 through 320 {
-    @media screen and (max-width: $i * 1px) { // 以设计图375为基准。1rem等于100px。320时1rem就是320/375*100。根据css的优先级规则，此处必须倒叙。
-        html {
-            font-size: floor($i / 375 * 100) *1px;
-        }
-    }
-}
+// rem自适应，不需要这个，因为支持rpx。
+//@for $i from 750 through 320 {
+//    @media screen and (max-width: $i * 1px) { // 以设计图375为基准。1rem等于100px。320时1rem就是320/375*100。根据css的优先级规则，此处必须倒叙。
+//        html {
+//            font-size: floor($i / 375 * 100) *1px;
+//        }
+//    }
+//}
 
 .border-top {
     border: 0;

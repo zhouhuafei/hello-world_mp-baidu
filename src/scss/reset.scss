@@ -18,3 +18,16 @@ html, body {
     font-size: inherit;
     line-height: 1;
 }
+
+// （百度智能小程序官方提供）为了兼容iPhoneX底部安全区，我们提供了一组兼容样式。官方给的案例就是如此，单位就是px，不必修改。
+.swan-security-padding-bottom {
+    padding-bottom: 34px;
+}
+
+.swan-security-margin-bottom {
+    margin-bottom: 34px;
+}
+
+.swan-security-fixed-bottom {
+    bottom: 34px;
+}

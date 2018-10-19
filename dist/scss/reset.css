@@ -13,3 +13,12 @@ html, body {
 .iconfont {
   font-size: inherit;
   line-height: 1; }
+
+.swan-security-padding-bottom {
+  padding-bottom: 34px; }
+
+.swan-security-margin-bottom {
+  margin-bottom: 34px; }
+
+.swan-security-fixed-bottom {
+  bottom: 34px; }

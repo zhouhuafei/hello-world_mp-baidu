@@ -1,16 +1,19 @@
 // 设计稿是375的，后续请务必按照375的设计图出图。
 @function rpx2($px) {
-    @return $px * 0.01rem;
+    //@return $px * 0.01rem; // 因支持rpx，所以这里就没必要使用rem了。
+    @return $px * 2rpx;
 }
 
 // 设计稿是375的，后续请务必按照375的设计图出图。
 @function px2rem($px) {
-    @return $px * 0.01rem;
+    //@return $px * 0.01rem; // 因支持rpx，所以这里就没必要使用rem了。
+    @return $px * 2rpx;
 }
 
 // 设计稿是750的，需要/2，后续请务必按照375的设计图出图。
 @function px2rpx($px) {
-    @return $px / 2 * 0.01rem;
+    //@return $px / 2 * 0.01rem; // 因支持rpx，所以这里就没必要使用rem了。
+    @return $px * 1rpx;
 }
 
 // 省略号
