@@ -1,1 +1,7 @@
-{"libVersion":"1.13.18","appid":"无智能小程序AppId部分功能受限","setting":{"urlCheck":false}}
+{
+    "libVersion": "1.13.18",
+    "appid": "无智能小程序AppId部分功能受限",
+    "setting": {
+        "urlCheck": false
+    }
+}
