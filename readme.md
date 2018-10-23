@@ -4,4 +4,7 @@ npm run dev
 ```
 
 # css单位
-* rem无法使用js适配，只能使用css的媒体查询适配。
+* 支持rpx
+
+# 注意事项
+* 清理dist目录时，请不要删掉project.swan.json文件。可以保留配置好的编译模式。
