@@ -1,3 +1,99 @@
+/*----------【var】----------*/
+// 遮罩
+$g-mask_z-index: 500 !default; // 层级
+$g-mask_bg: rgba(0, 0, 0, 0.6) !default; // 背景
+
+// 背景
+$g-background-color_floor: #f1f1f1 !default; // 底色
+$g-background-color_default: #bbbbbb !default; // 默认
+$g-background-color_disabled: #e6e6e6 !default; // 禁用
+$g-background-color_block: #ffffff !default; // 内容区块的背景色调
+
+// 字体
+$g-font-family: "Helvetica Neue", "Helvetica" !default; // 字体
+$g-font-size_default: 12 !default; // 默认字体大小12px
+$g-font-color_default: #333333 !default; // 默认
+$g-font-color_disabled: #c1c1c1 !default; // 禁用
+$g-font-color_auxiliary: #aaaaaa !default; // 辅助色
+
+// 边框
+$g-border-color_default: #ededed !default; // 默认
+$g-border-color_disabled: #e3e3e3 !default; // 禁用
+
+// 语义
+$g-color_brand: #ff4141 !default; // 品牌色
+$g-color_highlight: #ff4141 !default; // 高亮，有待思考这个颜色是不是应该就是品牌色待续...
+$g-color_success: #67C23A !default; // 成功(嫩绿)
+$g-color_warning: #eb9e05 !default; // 警告(鲜橙)
+$g-color_danger: #fa5555 !default; // 危险(艳红)
+$g-color_ignore: #bfbfbf !default; // 忽视(浅灰)
+$g-color_mask: rgba(0, 0, 0, 0.6) !default; // 遮罩(黑色)
+$g-color_select: #409eff !default; // 自定义单选按钮和自定义多选按钮等被选中的色调(蓝色)
+$g-color_create: #06bf04 !default; // 新建(创建)的颜色
+$g-color_cancel: #888d99 !default; // 取消的颜色，有待思考命名是否合理待续...
+$g-color_dark: #252834 !default; // 菜单的颜色，有待思考命名是否合理待续...
+
+/*----------【mixin】----------*/
+// 清除浮动
+@mixin g-clearfix() {
+    &:after {
+        content: '';
+        clear: both;
+        display: block;
+        height: 0;
+        overflow: hidden;
+    }
+}
+
+// 垂直水平居中(伪类)
+@mixin g-xy-center_sham() {
+    font-size: 0;
+    text-align: center;
+    & > :nth-child(n) {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    &:before {
+        content: '';
+        height: 100%;
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+// 垂直水平居中(flex)
+@mixin g-xy-center_flex() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    word-break: break-all;
+}
+
+// 省略号单行
+@mixin g-text-ellipsis_one() {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+// 省略号多行，$lineHeight需要带单位，$height需要带单位。
+@mixin g-text-ellipsis_more($lineClamp:1, $lineHeight:1, $height:0) {
+    line-height: $lineHeight;
+    @if $height == 0 { // 没传高的话，高度自动计算。
+        height: $lineHeight * $lineClamp;
+    } @else {
+        height: $height;
+    }
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $lineClamp;
+}
+
+/*----------【function】----------*/
 // 设计稿是375的，后续请务必按照375的设计图出图。
 @function rpx2($px) {
     //@return $px * 0.01rem; // 因支持rpx，所以这里就没必要使用rem了。
@@ -15,53 +111,3 @@
     //@return $px / 2 * 0.01rem; // 因支持rpx，所以这里就没必要使用rem了。
     @return $px * 1rpx;
 }
-
-// 省略号
-@mixin ellipsis2($lineClamp: 1, $lineHeight: 18) {
-    display: -webkit-box;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    -webkit-line-clamp: $lineClamp;
-    -webkit-box-orient: vertical;
-}
-
-@mixin clear-fix() {
-    &:after {
-        content: '';
-        display: block;
-        height: 0;
-        overflow: hidden;
-        font-size: 0;
-        clear: both;
-    }
-}
-
-// 新版
-$color1: #fc152e;
-$color2: #333333;
-$color3: #dddddd;
-$color4: #7f8285;
-$color5: #666666;
-$color6: #aaaaaa;
-$color7: #888888;
-$color8: #ff6537;
-$color9: whitesmoke;
-$color10: #fd9c1e;
-$color11: #006de7;
-$color12: #efeff4;
-$color13: #ff6537;
-$color14: white;
-$color15: #65af2b;
-$color16: #b7b7b7;
-
-$g-border-color-default: #dddddd;
-
-$g-font-color-default: #333333;
-$g-font-color-auxiliary: #aeaeae;
-
-$g-background-color-floor: #f2f2f2;
-
-$g-success-color: #68cf11;
-$g-danger-color: #f8001d;
-
-

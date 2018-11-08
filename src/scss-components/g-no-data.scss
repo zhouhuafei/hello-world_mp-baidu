@@ -1,0 +1,33 @@
+@import "../scss/config";
+
+.g-no-data {
+    text-align: center;
+}
+
+.g-no-data-icon {
+    width: rpx2(64);
+    height: rpx2(64);
+    font-size: px2rpx(64);
+    margin: rpx2(120) auto rpx2(40);
+    overflow: hidden;
+    line-height: rpx2(64);
+    text-align: center;
+    background: #d7d7d7;
+    border-radius: 100%;
+}
+
+.g-no-data-text {
+    font-size: rpx2(16);
+    color: #666666;
+}
+
+.g-no-data-btn {
+    width: rpx2(190);
+    height: rpx2(50);
+    margin: rpx2(40) auto 0;
+    font-size: rpx2(16);
+    line-height: rpx2(50);
+    color: #fc152e;
+    border: rpx2(1) solid currentColor;
+    border-radius: rpx2(4);
+}

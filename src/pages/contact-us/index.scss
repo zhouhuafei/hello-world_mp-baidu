@@ -1,0 +1,47 @@
+@import "../../scss/config";
+
+html, body, page {
+    background: #ffffff;
+}
+
+.container {
+}
+
+.row {
+    .row-item {
+        position: relative;
+        padding-top: px2rem(20);
+        height: px2rem(60);
+        display: flex;
+        align-items: center;
+        margin: 0 px2rem(10);
+        border-bottom: 2px solid $g-border-color_default;
+    }
+    .row-item-title {
+        color: #9f9f9f;
+        font-size: px2rem(14);
+        margin-bottom: px2rem(10);
+        position: absolute;
+        left: 0;
+        top: px2rem(8);
+    }
+    .row-item-text {
+        font-size: px2rem(16);
+        color: #000000;
+        flex: 1;
+    }
+    .row-item-line {
+        width: px2rem(2);
+        height: px2rem(20);
+        background: #d0d0d0;
+    }
+    .row-item-icon {
+        width: px2rem(40);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: px2rem(20);
+        color: $g-color_warning;
+    }
+}
+

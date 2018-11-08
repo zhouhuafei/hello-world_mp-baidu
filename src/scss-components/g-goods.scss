@@ -1,0 +1,44 @@
+@import "../scss/config";
+
+.g-goods-wrap {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    border-top: 1px solid $g-border-color_default;
+    .g-goods {
+        background: #ffffff;
+        width: 50%;
+        height: px2rpx(490);
+        border-bottom: 1px solid $g-border-color_default;
+        &:nth-of-type(2n+1) {
+            border-right: 1px solid $g-border-color_default;
+        }
+    }
+    .g-goods-logo {
+        width: px2rpx(300);
+        height: px2rpx(300);
+        margin: px2rpx(30) auto 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .g-goods-logo-img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
+    .g-goods-content {
+        font-size: px2rpx(32);
+        padding: px2rpx(0) px2rpx(30);
+    }
+    .g-goods-content-name {
+        margin-top: px2rpx(20);
+        font-size: px2rpx(32);
+        @include g-text-ellipsis_one;
+        text-indent: px2rpx(7);
+    }
+    .g-goods-content-price {
+        margin-top: px2rpx(16);
+        font-size: px2rpx(38);
+        color: #ff4141;
+    }
+}

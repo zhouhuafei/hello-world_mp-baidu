@@ -1,0 +1,29 @@
+<view class="container">
+    <view class="container">
+        <view class="row">
+            <view class="row-item">
+                <view class="row-item-title">公司地址</view>
+                <view class="row-item-text">上海市宝山区长江路258号</view>
+                <!--
+                <view class="row-item-line"></view>
+                <view class="row-item-icon iconfont icon-address"></view>
+                -->
+            </view>
+            <view class="row-item">
+                <view class="row-item-title">联系电话：</view>
+                <view class="row-item-text">10105188</view>
+                <view class="row-item-line"></view>
+                <view class="row-item-icon iconfont icon-tel"></view>
+            </view>
+            <view class="row-item">
+                <view class="row-item-title">邮箱地址：</view>
+                <view class="row-item-text">433890721@qq.com</view>
+            </view>
+            <view class="row-item">
+                <view class="row-item-title">QQ号码：</view>
+                <view class="row-item-text">433890721</view>
+            </view>
+        </view>
+        <g-footer-nav></g-footer-nav>
+    </view>
+</view>

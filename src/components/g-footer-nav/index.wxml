@@ -1,0 +1,20 @@
+<view class="g-footer-nav-wrap">
+    <view class="g-footer-nav">
+        <navigator url="/pages/home/index" class="g-footer-nav-item">
+            <view class="g-footer-nav-item-text">官方首页</view>
+            <view class="g-footer-nav-item-desc">Home page</view>
+        </navigator>
+        <navigator url="/pages/service-content/index" class="g-footer-nav-item">
+            <view class="g-footer-nav-item-text">服务内容</view>
+            <view class="g-footer-nav-item-desc">Service content</view>
+        </navigator>
+        <navigator url="/pages/about-us/index" class="g-footer-nav-item">
+            <view class="g-footer-nav-item-text">关于我们</view>
+            <view class="g-footer-nav-item-desc">About us</view>
+        </navigator>
+        <navigator url="/pages/contact-us/index" class="g-footer-nav-item">
+            <view class="g-footer-nav-item-text">联系我们</view>
+            <view class="g-footer-nav-item-desc">Contact us</view>
+        </navigator>
+    </view>
+</view>

@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "g-footer-nav": "../../components/g-footer-nav/index"
+    },
+    "navigationBarTitleText": "服务内容"
+}

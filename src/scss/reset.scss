@@ -1,16 +1,43 @@
 @import "./config";
 
 html, body, page {
-    background-color: #f5f5f5;
-    font-size: 12px;
-    font-family: -apple-system-font, Helvetica Neue, Helvetica, sans-serif;
-    height: 100%;
+    color: $g-font-color_default;
+    background-color: $g-background-color_floor;
+    font-size: px2rem(12);
+    font-family: "微软雅黑", Helvetica Neue, Helvetica, sans-serif;
     line-height: 1;
+}
+
+image {
+    vertical-align: middle;
+}
+
+input {
+    font-family: inherit;
+    display: flex;
+    align-items: center;
+}
+
+button {
+    line-height: 1;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    padding: 0;
+}
+
+button::after {
+    border: none;
 }
 
 .iconfont {
     font-size: inherit;
     line-height: 1;
+}
+
+.container {
+    width: 100%;
+    overflow: hidden;
 }
 
 // （百度智能小程序官方提供）为了兼容iPhoneX底部安全区，我们提供了一组兼容样式。官方给的案例就是如此，单位就是px，不必修改。

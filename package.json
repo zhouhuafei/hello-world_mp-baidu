@@ -1,27 +1,33 @@
 {
-  "name": "suibianxiexie_mp-baidu",
-  "version": "1.0.0",
-  "description": "",
-  "main": "",
-  "scripts": {
-    "dev": "gulp dev",
-    "build": "gulp build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/zhouhuafei/suibianxiexie_mp-baidu.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/zhouhuafei/suibianxiexie_mp-baidu/issues"
-  },
-  "homepage": "https://github.com/zhouhuafei/suibianxiexie_mp-baidu#readme",
-  "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-imagemin": "^4.1.0",
-    "gulp-plumber": "^1.2.0",
-    "gulp-rename": "^1.4.0",
-    "gulp-sass": "^4.0.2"
-  }
+    "name": "baihui-mp",
+    "version": "1.0.0",
+    "description": "",
+    "main": "",
+    "scripts": {
+        "baiduDev": "cross-env NODE_ENV=development gulp baiduDev",
+        "baiduBuild": "cross-env NODE_ENV=production gulp baiduBuild",
+        "weixinDev": "cross-env NODE_ENV=development gulp weixinDev",
+        "weixinBuild": "cross-env NODE_ENV=production gulp weixinBuild",
+        "build": "cross-env NODE_ENV=production npm run weixinBuild && npm run baiduBuild"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://git.ishopex.cn/zhouhuafei/baihui-mp.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://git.ishopex.cn/zhouhuafei/baihui-mp/issues"
+    },
+    "homepage": "https://git.ishopex.cn/zhouhuafei/baihui-mp#readme",
+    "devDependencies": {
+        "cross-env": "^5.2.0",
+        "gulp": "^3.9.1",
+        "gulp-batch-replace": "0.0.0",
+        "gulp-imagemin": "^4.1.0",
+        "gulp-plumber": "^1.2.0",
+        "gulp-rename": "^1.4.0",
+        "gulp-replace": "^1.0.0",
+        "gulp-sass": "^4.0.2"
+    }
 }

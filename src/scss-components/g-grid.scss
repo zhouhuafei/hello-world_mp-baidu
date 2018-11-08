@@ -1,0 +1,42 @@
+@import "../scss/config";
+
+.g-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.g-grid-item {
+    background: #ffffff;
+    width: px2rpx(250);
+    height: px2rpx(250);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-right: 1px solid $g-border-color_default;
+    border-bottom: 1px solid $g-border-color_default;
+    &:nth-of-type(3n) {
+        border-right: none;
+    }
+    &:nth-of-type(1) {
+        color: $g-color_danger;
+    }
+    &:nth-of-type(2) {
+        color: $g-color_warning;
+    }
+    &:nth-of-type(3) {
+        color: $g-color_success;
+    }
+    &:nth-of-type(4) {
+        color: $g-color_select;
+    }
+}
+
+.g-grid-item-icon {
+    font-size: px2rpx(50);
+    margin-bottom: px2rpx(20);
+}
+
+.g-grid-item-text {
+    font-size: px2rpx(24);
+}

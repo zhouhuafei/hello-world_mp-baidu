@@ -1,0 +1,38 @@
+@import "./config";
+
+@keyframes drift {
+    from {
+        transform: rotate(0deg);
+    }
+    from {
+        transform: rotate(360deg);
+    }
+}
+
+.wave-wrap {
+    position: relative;
+    .wave {
+        opacity: .4;
+        position: absolute;
+        top: 3%;
+        left: 50%;
+        background: #0af;
+        width: 800px;
+        height: 800px;
+        margin-left: -400px;
+        margin-top: -600px;
+        transform-origin: 50% 48%;
+        border-radius: 43%;
+        animation: drift 20000ms infinite linear;
+    }
+
+    .wave.two {
+        animation: drift 22000ms infinite linear;
+        opacity: .1;
+        background: yellow;
+    }
+
+    .wave.three {
+        animation: drift 19500ms infinite linear;
+    }
+}

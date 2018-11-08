@@ -1,23 +1,27 @@
-@import "../src/scss/config";
+@import "./scss/config";
 // 字体图标
-@import "../src/fonts/iconfont.css";
+@import "./scss/iconfont";
 // 清零样式
-@import "../src/scss/reset";
+@import "./scss/reset";
+// 工具样式
+@import "./scss/tools";
+// 动画
+@import "./scss/animations";
 // 媒体查询相关
-@import "../src/scss/media";
-
-.container {
-    font-size: px2rem(12);
-}
-
-.g-route {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: px2rem(20);
-    font-size: px2rem(20);
-}
-
-.g-route-icon {
-    margin-left: px2rem(10);
-}
+@import "./scss/media";
+// 样式组件 - 没有数据
+@import "./scss-components/g-no-data";
+// 样式组件 - 遮罩
+@import "./scss-components/g-mask";
+// 样式组件 - 底部导航
+@import "./scss-components/g-footer-nav";
+// 样式组件 - 商品列表
+@import "./scss-components/g-goods";
+// 样式组件 - 列表
+@import "./scss-components/g-list";
+// 样式组件 - 按钮
+@import "./scss-components/g-button";
+// 样式组件 - 网格
+@import "./scss-components/g-grid";
+// 样式组件 - 单行
+@import "./scss-components/g-single-line";
