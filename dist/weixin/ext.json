@@ -1,13 +1,13 @@
 {
     "extEnable": true,
-    "extAppid": "",
+    "extAppid": "wx464947edc7d048ae",
     "ext": {
         "siteInfo": {
             "envDev": "development",
             "env": "production",
             "domainPathDev": "",
             "domainPath": "",
-            "app_id": "",
+            "app_id": "wx464947edc7d048ae",
             "site_id": "",
             "api_version": "1.0",
             "api_type": "weixin",
