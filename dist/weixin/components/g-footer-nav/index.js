@@ -1,4 +1,9 @@
 Component({
-    properties: {},
+    properties: {
+        type: {
+            type: String,
+            value: '',
+        },
+    },
     data: {},
 });

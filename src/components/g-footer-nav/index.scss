@@ -4,9 +4,18 @@
     height: px2rem(90);
     width: px2rem(375);
     color: #000;
+    &._type1 {
+        height: 0;
+        .g-footer-nav {
+            height: px2rem(90);
+            width: px2rem(375);
+            background: transparent;
+        }
+    }
 }
 
 .g-footer-nav {
+    background: #ffffff;
     width: inherit;
     height: inherit;
     display: flex;
@@ -33,7 +42,7 @@
         top: 20%;
         height: 40%;
         width: px2rem(2);
-        background: #5b5b5b;
+        background: $g-font-color_auxiliary;
     }
     &:last-of-type:after {
         display: none;
@@ -41,9 +50,12 @@
 }
 
 .g-footer-nav-item-text {
-    width: px2rem(32);
+    width: px2rem(34);
     font-size: px2rem(16);
     line-height: 1.4;
+    display: flex;
+    align-content: center;
+    justify-content: center;
 }
 
 .g-footer-nav-item-desc {

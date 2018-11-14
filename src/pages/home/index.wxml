@@ -1,6 +1,5 @@
 <view class="container">
-    <view class="container" style="background-image: url({{pageBg}})">
-        <image class="logo" src="{{logo}}"></image>
-        <g-footer-nav></g-footer-nav>
-    </view>
+    <image class="logo" mode="widthFix" src="{{logo}}"></image>
+    <image class="bg" mode="widthFix" src="{{pageBg}}"></image>
+    <g-footer-nav type="type1"></g-footer-nav>
 </view>

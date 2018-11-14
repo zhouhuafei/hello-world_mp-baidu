@@ -6,8 +6,15 @@
   height: 180rpx;
   width: 750rpx;
   color: #000; }
+  .g-footer-nav-wrap._type1 {
+    height: 0; }
+    .g-footer-nav-wrap._type1 .g-footer-nav {
+      height: 180rpx;
+      width: 750rpx;
+      background: transparent; }
 
 .g-footer-nav {
+  background: #ffffff;
   width: inherit;
   height: inherit;
   display: flex;
@@ -33,14 +40,17 @@
     top: 20%;
     height: 40%;
     width: 4rpx;
-    background: #5b5b5b; }
+    background: #aaaaaa; }
   .g-footer-nav-item:last-of-type:after {
     display: none; }
 
 .g-footer-nav-item-text {
-  width: 64rpx;
+  width: 68rpx;
   font-size: 32rpx;
-  line-height: 1.4; }
+  line-height: 1.4;
+  display: flex;
+  align-content: center;
+  justify-content: center; }
 
 .g-footer-nav-item-desc {
   width: 100%;

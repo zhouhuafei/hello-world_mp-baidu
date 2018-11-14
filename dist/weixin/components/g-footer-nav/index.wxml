@@ -1,8 +1,8 @@
-<view class="g-footer-nav-wrap">
+<view class="g-footer-nav-wrap _{{type}}">
     <view class="g-footer-nav">
         <navigator url="/pages/home/index" class="g-footer-nav-item">
             <view class="g-footer-nav-item-text">官方首页</view>
-            <view class="g-footer-nav-item-desc">Home page</view>
+            <view class="g-footer-nav-item-desc">Product case</view>
         </navigator>
         <navigator url="/pages/service-content/index" class="g-footer-nav-item">
             <view class="g-footer-nav-item-text">服务内容</view>

@@ -1,7 +1,5 @@
 <view class="container">
     <import src="../../templates/wxParse/wxParse.wxml"/>
-    <view class="container">
-        <template is="wxParse" data="{{wxParseData:content.nodes}}"></template>
-        <g-footer-nav></g-footer-nav>
-    </view>
+    <template is="wxParse" data="{{wxParseData:content.nodes}}"></template>
+    <g-footer-nav></g-footer-nav>
 </view>

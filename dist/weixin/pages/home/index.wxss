@@ -3,25 +3,19 @@
 /*----------【mixin】----------*/
 /*----------【function】----------*/
 html, body, page {
-  width: 100%;
-  height: 100%; }
+  background: #ffffff; }
 
 .container {
   width: 100%;
-  height: 100%;
-  background-color: #e19313;
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center center; }
 
 .logo {
-  width: 720rpx;
-  height: 300rpx;
-  margin: 150rpx auto 0;
-  display: block; }
+  width: 240rpx;
+  position: absolute;
+  left: 20rpx;
+  top: 20rpx; }
 
-.g-footer-nav__g-footer-nav-wrap {
-  color: #ffffff !important; }
-
-.g-footer-nav-wrap {
-  color: #ffffff !important; }
+.bg {
+  width: 750rpx; }
