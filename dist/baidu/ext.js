@@ -9,7 +9,7 @@ module.exports = {
         'site_id': '438520',
         'api_version': '1.0',
         'api_type': 'baidu',
-        'h5DomainDev': 'https://wx-whd.whd-test.xyunqi.com',
+        "h5DomainDev": "https://wx-whd.weishangye.com/",
         'h5Domain': 'https://wx-whd.weishangye.com/',
     },
 };

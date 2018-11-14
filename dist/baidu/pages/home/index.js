@@ -12,6 +12,7 @@ Page({
     onShow() {
     },
     init() {
+        /*
         goods.list({
             page: 2,
             callback: (dataInfo) => {
@@ -21,5 +22,6 @@ Page({
                 }
             },
         });
+        */
     },
 });
