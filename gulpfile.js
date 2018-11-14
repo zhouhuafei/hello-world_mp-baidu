@@ -9,30 +9,30 @@ const isProduction = envName === 'production'; // 是否是生产环境
 
 function fn(name) {
     gulp.task(`dev-diff-${name}`, function () { // 此项和业务有关。不同平台的小程序，用不同的富文本解析模板template。
-        gulp.src(`diff/**/*.wxml`)
+        gulp.src(`diff/${name}/**/*.wxml`)
             .pipe(plumber())
             .pipe(rename((path) => {
                 path.extname = name === 'baidu' ? '.swan' : '.wxml'; // 百度的后缀和微信的后缀不同。
             }))
-            .pipe(gulp.dest(`dist/`));
+            .pipe(gulp.dest(`dist/${name}/`));
         // 微信小程序使用ext.json，因支持第三方
-        gulp.src(`diff/**/ext.json`)
+        gulp.src(`diff/${name}/ext.json`)
             .pipe(plumber())
             .pipe(replace([
                 [isProduction ? 'domainPathBuild' : 'domainPathDev', 'domainPath'], // 生产环境和开发环境使用的domainPath不同
                 [isProduction ? 'h5DomainBuild' : 'h5DomainDev', 'h5Domain'], // 生产环境和开发环境使用的h5Domain不同
                 [isProduction ? 'envBuild' : 'envDev', 'env'], // 生产环境和开发环境使用
             ]))
-            .pipe(gulp.dest(`dist/`));
+            .pipe(gulp.dest(`dist/${name}/`));
         // 百度小程序使用ext.js，因目前不支持第三方
-        gulp.src(`diff/**/ext.js`)
+        gulp.src(`diff/${name}/ext.js`)
             .pipe(plumber())
             .pipe(replace([
                 [isProduction ? 'domainPathBuild' : 'domainPathDev', 'domainPath'], // 生产环境和开发环境使用的domainPath不同
                 [isProduction ? 'h5DomainBuild' : 'h5DomainDev', 'h5Domain'], // 生产环境和开发环境使用的h5Domain不同
                 [isProduction ? 'envBuild' : 'envDev', 'env'], // 生产环境和开发环境使用
             ]))
-            .pipe(gulp.dest(`dist/`));
+            .pipe(gulp.dest(`dist/${name}/`));
     });
 
     gulp.task(`dev-json-${name}`, function () {
