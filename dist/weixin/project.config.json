@@ -13,8 +13,8 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.3.0",
-	"appid": "wxd10aec12c954efcd",
-	"projectname": "%E7%99%BE%E6%B1%87",
+	"appid": "",
+	"projectname": "suibianxiexie_mp-baidu",
 	"scripts": {},
 	"condition": {
 		"search": {
