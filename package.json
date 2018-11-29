@@ -1,5 +1,5 @@
 {
-    "name": "baihui-mp",
+    "name": "hello-world_mp-baidu",
     "version": "1.0.0",
     "description": "",
     "main": "",
@@ -12,14 +12,14 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://git.ishopex.cn/zhouhuafei/baihui-mp.git"
+        "url": "git+https://github.com/zhouhuafei/hello-world_mp-baidu.git"
     },
     "author": "",
     "license": "ISC",
     "bugs": {
-        "url": "https://git.ishopex.cn/zhouhuafei/baihui-mp/issues"
+        "url": "https://github.com/zhouhuafei/hello-world_mp-baidu/issues"
     },
-    "homepage": "https://git.ishopex.cn/zhouhuafei/baihui-mp#readme",
+    "homepage": "https://github.com/zhouhuafei/hello-world_mp-baidu#readme",
     "devDependencies": {
         "cross-env": "^5.2.0",
         "gulp": "^3.9.1",

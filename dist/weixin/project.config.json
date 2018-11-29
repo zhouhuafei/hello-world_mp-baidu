@@ -14,7 +14,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "2.3.0",
 	"appid": "wx464947edc7d048ae",
-	"projectname": "suibianxiexie_mp-baidu",
+	"projectname": "hello-world_mp-baidu",
 	"scripts": {},
 	"condition": {
 		"search": {
